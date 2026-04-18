@@ -6,11 +6,11 @@
 
 **Task:** Write a function that takes a string and returns it reversed.
 
-**Input:** string s
-**Output:** string
-**Constraints:** s.length <= 1000.
-**Edge Case:** Single character strings or empty strings.
-**Hint:** Look into built-in string slicing or a simple loop.
+- **Input:** string s
+- **Output:** string
+- **Constraints:** s.length <= 1000.
+- **Edge Case:** Single character strings or empty strings.
+- **Hint:** Look into built-in string slicing or a simple loop.
 
 ```ts
 
