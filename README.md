@@ -22,11 +22,11 @@
 
 **Task:** Print numbers from 1 to n. For multiples of 3, print "Fizz"; for multiples of 5, print "Buzz"; for multiples of both, print "FizzBuzz".
 
-**Input:** integer n
-**Output:** Printed lines or a list of strings.
-**Constraints:** 1 <= n <= 100.
-**Edge Case:** n = 1.
-**Hint:** Use the modulo operator % to check for remainders.
+- **Input:** integer n
+- **Output:** Printed lines or a list of strings.
+- **Constraints:** 1 <= n <= 100.
+- **Edge Case:** n = 1.
+- **Hint:** Use the modulo operator % to check for remainders.
 
 ```ts
 
@@ -38,11 +38,11 @@
 
 **Task:** Given an array of integers, return the largest value.
 
-**Input:** int[] nums
-**Output:** integer
-**Constraints:** Array will have at least one element.
-**Edge Case:** Array with all negative numbers.
-**Hint:** Initialize a variable with the first element of the array.
+- **Input:** int[] nums
+- **Output:** integer
+- **Constraints:** Array will have at least one element.
+- **Edge Case:** Array with all negative numbers.
+- **Hint:** Initialize a variable with the first element of the array.
 
 ```ts
 
@@ -54,11 +54,11 @@
 
 **Task:** Determine if a word reads the same forward and backward.
 
-**Input:** string s
-**Output:** boolean
-**Constraints:** Case-insensitive, ignore non-alphanumeric characters if you want a challenge.
-**Edge Case:** "racecar" (true) vs "hello" (false).
-**Hint:** Compare the string with its reverse.
+- **Input:** string s
+- **Output:** boolean
+- **Constraints:** Case-insensitive, ignore non-alphanumeric characters if you want a challenge.
+- **Edge Case:** "racecar" (true) vs "hello" (false).
+- **Hint:** Compare the string with its reverse.
 
 ```ts
 
@@ -70,11 +70,11 @@
 
 **Task:** Calculate the total sum of all numbers in an array.
 
-**Input:** int[] nums
-**Output:** integer
-**Constraints:** nums.length <= 500.
-**Edge Case:** Empty array (should return 0).
-**Hint:** Use an accumulator variable inside a loop.
+- **Input:** int[] nums
+- **Output:** integer
+- **Constraints:** nums.length <= 500.
+- **Edge Case:** Empty array (should return 0).
+- **Hint:** Use an accumulator variable inside a loop.
 
 ```ts
 
@@ -86,11 +86,11 @@
 
 **Task:** Count how many vowels (a, e, i, o, u) are in a given string.
 
-**Input:** string s
-**Output:** integer
-**Constraints:** s contains English letters and spaces.
-**Edge Case:** String with no vowels.
-**Hint:** Iterate through the string and check if each character is in a "vowel" set.
+- **Input:** string s
+- **Output:** integer
+- **Constraints:** s contains English letters and spaces.
+- **Edge Case:** String with no vowels.
+- **Hint:** Iterate through the string and check if each character is in a "vowel" set.
 
 ```ts
 
@@ -102,11 +102,11 @@
 
 **Task:** Find the factorial of a non-negative integer n.
 
-**Input:** integer n
-**Output:** integer
-**Constraints:** 0 <= n <= 12.
-**Edge Case:** n = 0 (Factorial of 0 is 1).
-**Hint:** Use a for-loop or recursion.
+- **Input:** integer n
+- **Output:** integer
+- **Constraints:** 0 <= n <= 12.
+- **Edge Case:** n = 0 (Factorial of 0 is 1).
+- **Hint:** Use a for-loop or recursion.
 
 ```ts
 
@@ -118,11 +118,11 @@
 
 **Task:** Given an array of numbers, return a new array containing only the even numbers.
 
-**Input:** int[] nums
-**Output:** int[]
-**Constraints:** nums.length <= 100.
-**Edge Case:** Array with no even numbers.
-**Hint:** Use the modulo operator inside a filter condition.
+- **Input:** int[] nums
+- **Output:** int[]
+- **Constraints:** nums.length <= 100.
+- **Edge Case:** Array with no even numbers.
+- **Hint:** Use the modulo operator inside a filter condition.
 
 ```ts
 
@@ -134,11 +134,11 @@
 
 **Task:** Generate the first n numbers of the Fibonacci sequence.
 
-**Input:** integer n
-**Output:** int[]
-**Constraints:** n >= 1.
-**Edge Case:** n = 1.
-**Hint:** Start with [0, 1] and add the last two elements to get the next.
+- **Input:** integer n
+- **Output:** int[]
+- **Constraints:** n >= 1.
+- **Edge Case:** n = 1.
+- **Hint:** Start with [0, 1] and add the last two elements to get the next.
 
 ```ts
 
@@ -150,11 +150,11 @@
 
 **Task:** Given an array of integers, return the smallest value.
 
-**Input:** int[] nums
-**Output:** integer
-**Constraints:** Array will not be empty.
-**Edge Case:** Multiple elements with the same minimum value.
-**Hint:** Similar logic to finding the maximum.
+- **Input:** int[] nums
+- **Output:** integer
+- **Constraints:** Array will not be empty.
+- **Edge Case:** Multiple elements with the same minimum value.
+- **Hint:** Similar logic to finding the maximum.
 
 ```ts
 
@@ -166,11 +166,11 @@
 
 **Task:** Generate a multiplication table for a number n up to 10.
 
-**Input:** integer n
-**Output:** List of strings (e.g., "5 x 1 = 5").
-**Constraints:** 1 <= n <= 100.
-**Edge Case:** n = 1.
-**Hint:** Use a simple loop from 1 to 10.
+- **Input:** integer n
+- **Output:** List of strings (e.g., "5 x 1 = 5").
+- **Constraints:** 1 <= n <= 100.
+- **Edge Case:** n = 1.
+- **Hint:** Use a simple loop from 1 to 10.
 
 ```ts
 
@@ -182,11 +182,11 @@
 
 **Task:** Determine if a number n is prime (only divisible by 1 and itself).
 
-**Input:** integer n
-**Output:** boolean
-**Constraints:** 1 <= n <= 1000.
-**Edge Case:** n = 1 (not prime), n = 2 (prime).
-**Hint:** Check divisibility from 2 up to the square root of n.
+- **Input:** integer n
+- **Output:** boolean
+- **Constraints:** 1 <= n <= 1000.
+- **Edge Case:** n = 1 (not prime), n = 2 (prime).
+- **Hint:** Check divisibility from 2 up to the square root of n.
 
 ```ts
 
@@ -198,11 +198,11 @@
 
 **Task:** Given an array, return a new array with duplicate values removed.
 
-**Input:** int[] nums
-**Output:** int[]
-**Constraints:** Order of elements should be preserved.
-**Edge Case:** Array where all elements are the same.
-**Hint:** Use a "Set" data structure or check if an element is already in the result list.
+- **Input:** int[] nums
+- **Output:** int[]
+- **Constraints:** Order of elements should be preserved.
+- **Edge Case:** Array where all elements are the same.
+- **Hint:** Use a "Set" data structure or check if an element is already in the result list.
 
 ```ts
 
@@ -214,11 +214,11 @@
 
 **Task:** Convert a temperature from Celsius to Fahrenheit.
 
-**Input:** float celsius
-**Output:** float
-**Constraints:** Formula: (C \* 9/5) + 32.
-**Edge Case:** Negative temperatures.
-**Hint:** Basic arithmetic operation.
+- **Input:** float celsius
+- **Output:** float
+- **Constraints:** Formula: (C \* 9/5) + 32.
+- **Edge Case:** Negative temperatures.
+- **Hint:** Basic arithmetic operation.
 
 ```ts
 
@@ -230,11 +230,11 @@
 
 **Task:** Given a string and a character, find how many times that character appears in the string.
 
-**Input:** string s, char c
-**Output:** integer
-**Constraints:** Case-sensitive.
-**Edge Case:** Character not present in the string.
-**Hint:** Use a counter variable and loop through the string.
+- **Input:** string s, char c
+- **Output:** integer
+- **Constraints:** Case-sensitive.
+- **Edge Case:** Character not present in the string.
+- **Hint:** Use a counter variable and loop through the string.
 
 ```ts
 
