@@ -20,6 +20,7 @@ function reverseString(s: string): string {
   }
   return output;
 }
+
 console.log(reverseString("hello")); // "olleh"
 console.log(reverseString("A")); // "A"
 console.log(reverseString("")); // ""
@@ -55,6 +56,7 @@ function fizzBuzz(n: number): string[] {
 
   return output;
 }
+
 console.log(fizzBuzz(5));
 // ["1", "2", "Fizz", "4", "Buzz"]
 
@@ -86,6 +88,7 @@ function findLargestNum(nums: number[]): number {
 
   return max;
 }
+
 console.log(findLargestNum([1, 5, 3, 9, 2])); // 9
 console.log(findLargestNum([-10, -5, -1])); // -1
 ```
@@ -113,6 +116,7 @@ function isPalindrome(s: string): boolean {
 
   return convertLowerCase === reversed;
 }
+
 console.log(isPalindrome("racecar")); // true
 console.log(isPalindrome("hello")); // false
 ```
@@ -138,6 +142,7 @@ function sumArray(nums: number[]): number {
   }
   return sum;
 }
+
 console.log(sumArray([1, 2, 3, 4])); // 10
 console.log(sumArray([])); // 0
 ```
@@ -165,6 +170,7 @@ function countVowels(s: string): number {
   }
   return count;
 }
+
 console.log(countVowels("hello")); // 2
 console.log(countVowels("xyz")); // 0
 ```
@@ -191,6 +197,7 @@ function factorialCalculation(n: number): number {
 
   return output;
 }
+
 console.log(factorialCalculation(5)); // 120
 console.log(factorialCalculation(0)); // 1
 ```
@@ -219,6 +226,7 @@ function evenNumbers(nums: number[]): number[] {
 
   return output;
 }
+
 console.log(evenNumbers([1, 2, 3, 4, 5, 6])); // [2, 4, 6]
 console.log(evenNumbers([1, 3, 5])); // []
 ```
@@ -247,6 +255,7 @@ function fibonacciSequence(n: number): number[] {
 
   return output;
 }
+
 console.log(fibonacciSequence(5)); // [0, 1, 1, 2, 3]
 console.log(fibonacciSequence(1)); // [0]
 ```
@@ -275,6 +284,7 @@ function findMinimum(nums: number[]): number {
 
   return min;
 }
+
 console.log(findMinimum([5, 2, 8, 1])); // 1
 console.log(findMinimum([3, 3, 3])); // 3
 ```
@@ -301,6 +311,7 @@ function multiplicationTable(n: number): string[] {
 
   return result;
 }
+
 console.log(multiplicationTable(5));
 /*
 [
@@ -336,6 +347,7 @@ function isPrimeNumber(n: number): boolean {
 
   return true;
 }
+
 console.log(isPrimeNumber(7)); // true
 console.log(isPrimeNumber(10)); // false
 console.log(isPrimeNumber(1)); // false
@@ -365,6 +377,7 @@ function removeDuplicates(nums: number[]): number[] {
 
   return result;
 }
+
 console.log(removeDuplicates([1, 2, 2, 3, 1]));
 // [1, 2, 3]
 ```
@@ -385,6 +398,7 @@ console.log(removeDuplicates([1, 2, 2, 3, 1]));
 function celsiusToFahrenheit(celsius: number): number {
   return (celsius * 9) / 5 + 32;
 }
+
 console.log(celsiusToFahrenheit(0)); // 32
 console.log(celsiusToFahrenheit(25)); // 77
 ```
@@ -413,8 +427,7 @@ function countOccurrencesCharacter(s: string, c: string): number {
 
   return count;
 }
+
 console.log(countOccurrencesCharacter("hello", "l")); // 2
 console.log(countOccurrencesCharacter("abc", "z")); // 0
 ```
-
----
