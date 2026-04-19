@@ -1,134 +1,168 @@
-// 1. Reverse a String
-// Task: Write a function that takes a string and returns it reversed.
+/* ======================================
+            2. FizzBuzz
+====================================== */
+function fizzBuzz(n: number): string[] {
+  let output: string[] = [];
 
-// Input: string s
-// Output: string
-// Constraints: s.length <= 1000.
-// Edge Case: Single character strings or empty strings.
-// Hint: Look into built-in string slicing or a simple loop.
+  for (let i = 1; i <= n; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+      output.push("FizzBuzz");
+    } else if (i % 3 === 0) {
+      output.push("Fizz");
+    } else if (i % 5 === 0) {
+      output.push("Buzz");
+    } else {
+      output.push(i.toString());
+    }
+  }
 
-// 2. FizzBuzz
-// Task: Print numbers from 1 to n. For multiples of 3, print "Fizz"; for multiples of 5, print "Buzz"; for multiples of both, print "FizzBuzz".
+  return output;
+}
+// console.log(fizzBuzz(5));
+// // ["1", "2", "Fizz", "4", "Buzz"]
 
-// Input: integer n
-// Output: Printed lines or a list of strings.
-// Constraints: 1 <= n <= 100.
-// Edge Case: n = 1.
-// Hint: Use the modulo operator % to check for remainders.
+// console.log(fizzBuzz(1));
+// // ["1"]
 
-// 3. Find the Largest Number in an Array
-// Task: Given an array of integers, return the largest value.
+/* ======================================
+ 3. Find the Largest Number in an Array
+====================================== */
+function findLargestNum(nums: number[]): number {
+  let max = nums[0];
 
-// Input: int[] nums
-// Output: integer
-// Constraints: Array will have at least one element.
-// Edge Case: Array with all negative numbers.
-// Hint: Initialize a variable with the first element of the array.
+  for (let i = 1; i < nums.length; i++) {
+    if (nums[i] > max) {
+      max = nums[i];
+    }
+  }
 
-// 4. Check for Palindrome
-// Task: Determine if a word reads the same forward and backward.
+  return max;
+}
+// console.log(findLargestNum([1, 5, 3, 9, 2])); // 9
+// console.log(findLargestNum([-10, -5, -1])); // -1
 
-// Input: string s
-// Output: boolean
-// Constraints: Case-insensitive, ignore non-alphanumeric characters if you want a challenge.
-// Edge Case: "racecar" (true) vs "hello" (false).
-// Hint: Compare the string with its reverse.
+/* ======================================
+           4. Check for Palindrome
+====================================== */
+function isPalindrome(s: string): boolean {
+  let convertLowerCase = s.toLowerCase();
+  let reversed = "";
 
-// 5. Sum of Array Elements
-// Task: Calculate the total sum of all numbers in an array.
+  for (let i = convertLowerCase.length - 1; i >= 0; i--) {
+    reversed += convertLowerCase[i];
+  }
 
-// Input: int[] nums
-// Output: integer
-// Constraints: nums.length <= 500.
-// Edge Case: Empty array (should return 0).
-// Hint: Use an accumulator variable inside a loop.
+  return convertLowerCase === reversed;
+}
+// console.log(isPalindrome("racecar")); // true
+// console.log(isPalindrome("hello")); // false
 
-// 6. Count Vowels
-// Task: Count how many vowels (a, e, i, o, u) are in a given string.
+/* ======================================
+        7. Factorial Calculation
+====================================== */
+function factorialCalculation(n: number): number {
+  let output = 1;
 
-// Input: string s
-// Output: integer
-// Constraints: s contains English letters and spaces.
-// Edge Case: String with no vowels.
-// Hint: Iterate through the string and check if each character is in a "vowel" set.
+  for (let i = 1; i <= n; i++) {
+    output *= i;
+  }
 
-// 7. Factorial Calculation
-// Task: Find the factorial of a non-negative integer n.
+  return output;
+}
+// console.log(factorialCalculation(5)); // 120
+// console.log(factorialCalculation(0)); // 1
 
-// Input: integer n
-// Output: integer
-// Constraints: 0 <= n <= 12.
-// Edge Case: n = 0 (Factorial of 0 is 1).
-// Hint: Use a for-loop or recursion.
+/* ======================================
+           8. Even or Odd List
+====================================== */
+function evenNumbers(nums: number[]): number[] {
+  let output: number[] = [];
 
-// 8. Even or Odd List
-// Task: Given an array of numbers, return a new array containing only the even numbers.
+  for (let i = 0; i < nums.length; i++) {
+    if (nums[i] % 2 === 0) {
+      output.push(nums[i]);
+    }
+  }
 
-// Input: int[] nums
-// Output: int[]
-// Constraints: nums.length <= 100.
-// Edge Case: Array with no even numbers.
-// Hint: Use the modulo operator inside a filter condition.
+  return output;
+}
+// console.log(evenNumbers([1, 2, 3, 4, 5, 6])); // [2, 4, 6]
+// console.log(evenNumbers([1, 3, 5])); // []
 
-// 9. Fibonacci Sequence
-// Task: Generate the first n numbers of the Fibonacci sequence.
+/* ======================================
+       9. Fibonacci Sequence
+====================================== */
+function fibonacciSequence(n: number): number[] {
+  if (n === 1) return [0];
 
-// Input: integer n
-// Output: int[]
-// Constraints: n >= 1.
-// Edge Case: n = 1.
-// Hint: Start with [0, 1] and add the last two elements to get the next.
+  let output = [0, 1];
 
-// 10. Find the Minimum in an Array
-// Task: Given an array of integers, return the smallest value.
+  for (let i = 2; i < n; i++) {
+    output.push(output[i - 1] + output[1 - 2]);
+  }
 
-// Input: int[] nums
-// Output: integer
-// Constraints: Array will not be empty.
-// Edge Case: Multiple elements with the same minimum value.
-// Hint: Similar logic to finding the maximum.
+  return output;
+}
+// console.log(fibonacciSequence(5)); // [0, 1, 1, 2, 3]
+// console.log(fibonacciSequence(1)); // [0]
 
-// 11. Multiplication Table
-// Task: Generate a multiplication table for a number n up to 10.
+/* ======================================
+     10. Find the Minimum in an Array
+====================================== */
+function findMinimum(nums: number[]): number {
+  let min = nums[0];
 
-// Input: integer n
-// Output: List of strings (e.g., "5 x 1 = 5").
-// Constraints: 1 <= n <= 100.
-// Edge Case: n = 1.
-// Hint: Use a simple loop from 1 to 10.
+  for (let i = 1; i < nums.length; i++) {
+    if (nums[i] < min) {
+      min = nums[i];
+    }
+  }
 
-// 12. Check Prime Number
-// Task: Determine if a number n is prime (only divisible by 1 and itself).
+  return min;
+}
+// console.log(findMinimum([5, 2, 8, 1])); // 1
+// console.log(findMinimum([3, 3, 3])); // 3
 
-// Input: integer n
-// Output: boolean
-// Constraints: 1 <= n <= 1000.
-// Edge Case: n = 1 (not prime), n = 2 (prime).
-// Hint: Check divisibility from 2 up to the square root of n.
+/* ======================================
+            12. Check Prime Number
+====================================== */
+function isPrimeNumber(n: number): boolean {
+  if (n <= 1) return false;
 
-// 13. Remove Duplicates from a List
-// Task: Given an array, return a new array with duplicate values removed.
+  for (let i = 2; i <= Math.sqrt(n); i++) {
+    if (n % i === 0) {
+      return false;
+    }
+  }
 
-// Input: int[] nums
-// Output: int[]
-// Constraints: Order of elements should be preserved.
-// Edge Case: Array where all elements are the same.
-// Hint: Use a "Set" data structure or check if an element is already in the result list.
+  return true;
+}
+// console.log(isPrimeNumber(7)); // true
+// console.log(isPrimeNumber(10)); // false
+// console.log(isPrimeNumber(1)); // false
 
-// 14. Convert Celsius to Fahrenheit
-// Task: Convert a temperature from Celsius to Fahrenheit.
+/* ======================================
+    14. Convert Celsius to Fahrenheit
+====================================== */
+function celsiusToFahrenheit(celsius: number): number {
+  return (celsius * 9) / 5 + 32;
+}
+// console.log(celsiusToFahrenheit(0)); // 32
+// console.log(celsiusToFahrenheit(25)); // 77
 
-// Input: float celsius
-// Output: float
-// Constraints: Formula: (C * 9/5) + 32.
-// Edge Case: Negative temperatures.
-// Hint: Basic arithmetic operation.
+/* ======================================
+  15. Count Occurrences of a Character
+====================================== */
+function countOccurrencesCharacter(s: string, c: string): number {
+  let count = 0;
 
-// 15. Count Occurrences of a Character
-// Task: Given a string and a character, find how many times that character appears in the string.
+  for (let i = 0; i < s.length; i++) {
+    if (s[i] === c) {
+      count++;
+    }
+  }
 
-// Input: string s, char c
-// Output: integer
-// Constraints: Case-sensitive.
-// Edge Case: Character not present in the string.
-// Hint: Use a counter variable and loop through the string.
+  return count;
+}
+// console.log(countOccurrencesCharacter("hello", "l")); // 2
+// console.log(countOccurrencesCharacter("abc", "z")); // 0
